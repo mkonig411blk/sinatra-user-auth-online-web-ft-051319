@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class CreateDogs < ActiveRecord::Migration[5.2]
   validates_presence_of :name, :email, :password
   def change
     create_table :users do |t|
