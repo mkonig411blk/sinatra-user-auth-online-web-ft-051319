@@ -1,5 +1,4 @@
-class User < ActiveRecord::Base
-  validates_presence_of :name, :email, :password
+class CreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
       t.string :name
@@ -7,4 +6,4 @@ class User < ActiveRecord::Base
       t.string :password
     end
   end
-end
+end 
