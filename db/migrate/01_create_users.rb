@@ -6,4 +6,3 @@ class CreateDogs < ActiveRecord::Migration[5.2]
       t.string :password
     end
   end
-end
