@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
     @user.save
     # We registered a new user! Now we just need to sign them in. 
     session[:user_id] = @user.id
-
+    # Now that we've signed up and logged in our user, we want to take them to their homepage.
     redirect '/users/home'
   end
 
