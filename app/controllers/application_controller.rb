@@ -45,6 +45,7 @@ class ApplicationController < Sinatra::Base
 
   get '/users/home' do
     @user = User.find(session[:user_id])
+    # First, this route finds the current user based on the ID value stored in the session hash. Then, it sets an instance variable, @user, equal to that found user, allowing us to access the current user in the corresponding view page.
     erb :'/users/home'
   end
 end
